@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Text to Speech</title>
+  </head>
+  <body>
+    <div class="container-global">
+      <div class="box">
+        <h1 id="titulo">Text To Speech</h1>
+
+        <div class="container-text">
+          <label for="text-area">Enter text</label>
+          <textarea
+            type="text"
+            id="text-area"
+            autofocus
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+
+        <div class="container-voice">
+          <label for="voices">Select Voice</label>
+          <select name="voices-select" id="voices"></select>
+        </div>
+
+        <button id="play-speech">Speech</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
